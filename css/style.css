@@ -1,0 +1,503 @@
+/* デフォルトCSSのリセット */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #9CA58F;
+    font-family: 'Noto Serif JP', serif;
+    position: relative;
+    /* 重なり順を指定 */
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    background-color: #C4C1B9;
+}
+
+.bx-wrapper__header {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    width: 200px;
+}
+
+img {
+    width: 100%;
+}
+
+.headerList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 32px;
+    color: black;
+    font-size: 16px;
+    font-family: 'IM Fell Double Pica', serif;
+}
+
+.headerList__item {
+    list-style-type: none;
+}
+
+.bx-wrapper {
+    margin: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+/* メインビジュアルキャッチコピー */
+.catchCopy {
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    color: black;
+    width: 1120px;
+    font-family: 'IM Fell Double Pica', serif;
+    transform: translateX(-50%);
+}
+
+.catchCopy__main {
+    font-size: 56px;
+}
+
+.catchCopy__sub {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.activity {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.activityTitle {
+    display: flex;
+    width: 305px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    /* タイトルを中央に配置 */
+    margin: 0 auto;
+    justify-content: space-evenly;
+    /* すべての余白を均等に指定 */
+    align-items: center;
+    /* 上下中央寄せ */
+    padding: 13px 0;
+}
+
+.activityTitle__main {
+    font-size: 46px;
+    font-family: 'IM Fell Double Pica', serif;
+}
+
+.activityTitle__sub {
+    font-size: 16px;
+}
+
+.activityArticle {
+    display: flex;
+    column-gap: 3%;
+    width: 70%;
+    /* 子要素の高さが伸縮する指定 */
+    align-items: stretch;
+    background-color: none;
+    /*  上は64pxあけて水平方向に中央寄せ */
+    margin: 64px auto 0;
+}
+
+.monesArticle {
+    width: 22.75%;
+    display: flex;
+}
+
+.monesArticle__box {
+    background-color: white;
+    padding: 16px;
+}
+
+.monesArticle__title {
+    margin-top: 16px;
+    border-left: 2px solid black;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.monesArticle__description {
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+.goghsArticle {
+    width: 22.75%;
+    display: flex;
+
+}
+
+.goghsArticle__box {
+    background-color: white;
+    padding: 16px;
+}
+
+
+.goghsArticle__title {
+    margin-top: 16px;
+    border-left: 2px solid black;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.goghsArticle__description {
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+.rublesArticle {
+    width: 22.75%;
+    display: flex;
+}
+
+.rublesArticle__box {
+    background-color: white;
+    padding: 16px;
+}
+
+.rublesArticle__title {
+    margin-top: 16px;
+    border-left: 2px solid black;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.rublesArticle__description {
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+.otakesArticle {
+    width: 22.75%;
+    display: flex;
+}
+
+.otakesArticle__box {
+    background-color: white;
+    padding: 16px;
+}
+
+.otakesArticle__title {
+    margin-top: 16px;
+    border-left: 2px solid black;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.otakesArticle__description {
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+.picup {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.picupTitle {
+    display: flex;
+    width: 311px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    text-align: right;
+    color: white;
+    margin: 0 15% 0 auto;
+    /* 上0 右15% 下0で設定 */
+    justify-content: space-evenly;
+    /* すべての余白を均等に指定 */
+    align-items: center;
+    /* 上下中央寄せ */
+    padding: 13px 0;
+
+}
+
+.picupTitle__sub {
+    font-size: 16px;
+}
+
+.picupTitle__main {
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 46px;
+}
+
+.picupContent {
+    width: 70%;
+    margin: 64px auto 0;
+    /* 上は64pxあけて水平方向に中央寄せ  */
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10%;
+}
+
+.picupContent__box {
+    display: flex;
+    flex-direction: column;
+    /* 左右中央揃え */
+    align-items: center;
+    width: 30%;
+    padding: 25px;
+    padding-bottom: 75px;
+    background-color: white;
+}
+
+.picupContent__number {
+    position: relative;
+    top: 20%;
+    left: 30%;
+}
+
+.teamLove__box {
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 上下中央寄せ */
+    padding: 25px;
+}
+
+.teamLove__title {
+    font-size: 27px;
+    font-family: 'IM Fell Double Pica', serif;
+    border-left: 2px solid black;
+    padding-left: 3px;
+}
+
+.teamLove__description1 {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.teamLove__description2 {
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.teamLove__description3 {
+    font-size: 10px;
+    margin-top: 16px;
+    margin-left: 333px;
+}
+
+.recentposts {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.recentpostsTitle {
+    display: flex;
+    width: 433px;
+    margin-left: 15%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    color: white;
+    justify-content: space-evenly;
+    /* すべての余白を均等に指定 */
+    align-items: center;
+    /* 上下中央寄せ */
+    padding: 13px 0;
+}
+
+.recentpostsTitle__main {
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 46px;
+}
+
+.recentpostsTitle__sub {
+    font-size: 16px;
+}
+
+.recentpostsContent__box {
+    margin: 64px auto 0;
+    width: 100%;
+    height: 301px;
+    background-color: #62615F;
+}
+
+.recentpostsContent img {
+    width: 272px;
+    height: 205px;
+    column-gap: 20px;
+    padding-top: 48px;
+    column-gap: 20px;
+}
+
+.whiteBox {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 17px;
+    height: 35px;
+    background-color: #fff;
+    margin-block: 10px;
+}
+
+.recentpostsContent img {
+    padding-top: 0px;
+}
+
+.recentpostsContent__box {
+    height: auto;
+}
+
+.contact {
+    position: relative;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.contactTitle {
+    display: flex;
+    width: 305px;
+    color: white;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    padding: 13px 0;
+    align-items: center;
+    justify-content: space-evenly;
+    /* タイトルを中央に配置 */
+    margin: 0 auto;
+}
+
+.contactTitle__main {
+    font-size: 46px;
+    font-family: 'IM Fell Double Pica', serif;
+}
+
+.ContactTitle__sub {
+    font-size: 16px;
+}
+
+.form {
+    width: 100%;
+}
+
+.bx-wrapper__form {
+    width: 544px;
+    height: 578px;
+    margin: 64px auto;
+}
+
+.formItem__NAME {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formItem {
+    font-size: 14px;
+}
+
+.formItem {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.formItem__name .form-text {
+    width: 256px;
+    height: 33px;
+}
+
+.formItem__FURIGANA {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formItem__furigana .form-text {
+    width: 256px;
+    height: 33px;
+
+}
+
+.formItem__email .form-text {
+    width: 100%;
+    height: 33px;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 196px;
+}
+
+.formItem__button {
+    text-align: center;
+}
+
+.form-button {
+    margin-top: 64px;
+    border-radius: 6px;
+    width: 260px;
+    height: 50px;
+    background-color: #62615F;
+}
+
+.bx-wrapper__radiusBig {
+    width: 100%
+}
+
+.radiusBig {
+    width: 428px;
+    height: 702px;
+    /* 背景透過 */
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 0;
+    top: 47%;
+    transform: translateY(-50%);
+}
+
+.bx-wrapper__radiusSmall {
+    width: 100%;
+}
+
+.radiusSmall {
+    width: 314px;
+    height: 408px;
+    /* 背景透過 */
+    mix-blend-mode: multiply;
+    position: absolute;
+    right: 0;
+    top: 76%;
+    transform: translateY(-50%);
+}
+
+.footerText {
+    width: 100%;
+    background-color: #C4C1B9;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: 'IM Fell Double Pica', serif;
+}

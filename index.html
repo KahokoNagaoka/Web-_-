@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mone's Diary</title>
+    <!-- CSS埋め込み -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- フォント変更1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap" rel="stylesheet">
+    <!-- フォント変更2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <!-- スライドショー -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> <!-- bxsliderのcss -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> <!-- bxsliderのJS -->
+    <script>
+        $(document).ready(function () {
+            $('.slideshow').bxSlider({
+                auto: true,
+                mode: 'fade',
+                speed: 1000,
+                pager: false,  //ページャーの非表示
+                controls: false, //前後のコントロールボタン非表示
+            });
+        });
+    </script>
+    <!-- 横無限スクロール -->
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('.slider').slick({
+                autoplay: true, //自動スクロール
+                autoplaySpeed: 0, //自動再生時のスライド切り替えの時間
+                speed: 5000, //スライドが流れるスピード
+                arrows: false, //左右の矢印を非表示
+                swipe: false, //スワイプ禁止
+                slidesToShow: 5, //表示するスライドの数
+                cssEase: 'linear', //画像切り替えのアニメーション"linearは等速"
+                pauseOnFocus: false, //フォーカスしても止めない
+                pauseOnHover: false, //マウスホバーしても止めない
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="bx-wrapper__header">
+            <img class="headerLogo" src="img/logo.jpg">
+            <ul class="headerList">
+                <li class="headerList__item">activity</li>
+                <li class="headerList__item">pick up</li>
+                <li class="headerList__item">recent posts</li>
+                <li class="headerList__item">contact</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainVisual">
+            <div class="bx-wrapper" style="max-width:100%;">
+                <div class="bx-viewport" aria-live="polite"
+                    style="width:100%;overflow:hidden;position:relative;height: 550px;">
+                    <div class="slideshow" style="width:auto;position:relative;">
+                        <img src="img/mainVisual__img1.jpg" alt aria-hidden="false"
+                            style="float:none;list-style:none;position:absolute;width:1440px;z-index:50;">
+                        <img src="img/mainVisual__img2.jpg" alt aria-hidden="false"
+                            style="float:none;list-style:none;position:absolute;width:1440px;z-index:50;">
+                        <img src="img/mainVisual__img3.jpg" alt aria-hidden="false"
+                            style="float:none;list-style:none;position:absolute;width:1440px;z-index:50;">
+                    </div>
+                </div>
+            </div>
+            <div class="catchCopy">
+                <p class="catchCopy__main">Mone's Diary</p>
+                <p class="catchCopy__sub">Bloom where you're planted</p>
+            </div>
+        </div>
+
+        <div class="activity">
+            <div class="activityTitle">
+                <p class="activityTitle__main">activity</p>
+                <p class="activityTitle__sub">お出かけしよう</p>
+            </div>
+            <div class="activityArticle">
+                <div class="monesArticle">
+                    <div class="monesArticle__box">
+                        <div class="monesArticle__Content">
+                            <img class="monesArticle__img" src="img/monesArticle__img.png">
+                            <p class="monesArticle__title">モネ展</p>
+                            <p class="monesArticle__description">100%モネ。展示作品のすべてがモネ。<br>
+                                印象派の誕生（1874年）から150周年を迎える節目の展覧会であり、国内外40館以上からモネの代表作が出品されている。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goghsArticle">
+                    <div class="goghsArticle__box">
+                        <div class="goghsArticle__Content">
+                            <img class="goghsArticle__img" src="img/goghsArticle__img.png">
+                            <p class="goghsArticle__title">ゴッホ・アライブ</p>
+                            <p class="goghsArticle__description">
+                                ゴッホの世界を五感で感じられる新感覚の没入型展覧会。クラシック音楽が流れる中、ゴッホの世界が3000点以上の画像でで壁や柱、床などありとあらゆる場所に映し出される。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rublesArticle">
+                    <div class="rublesArticle__box">
+                        <div class="rublesArticle__Content">
+                            <img class="rublesArticle__img" src="img/rublesArticle__img.png">
+                            <p class="rublesArticle__title">ルーブル美術館展</p>
+                            <p class="rublesArticle__description">
+                                ルーブルが世界に誇る珠玉の「愛」の名画73点が一堂に集結！誰もが知る傑作から隠れた名画まで、日本初公開作品を含め、新たな発見や出会いのある展覧会である。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="otakesArticle">
+                    <div class="otakesArticle__box">
+                        <div class="otakesArticle__Content">
+                            <img class="otakesArticle__img" src="img/otakesArticle__img.png">
+                            <p class="otakesArticle__title">大竹伸郎展</p>
+                            <p class="otakesArticle__description">あらゆる素材、イメージ、方法。<br>
+                                作者が「既にそこにあるもの」と呼ぶテーマのもとに半世紀近く持続してきた制作の軌跡。3つの「時/他」「記憶」「時間」のテーマに基づいて構成される。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="picup">
+            <div class="picupTitle">
+                <p class="picupTitle__sub">おすすめの話題</p>
+                <p class="picupTitle__main">pic up</p>
+            </div>
+            <div class="picupContent">
+                <div class="picupContent__box"> <!-- 写真の白枠 -->
+                    <img class="picupContent__img" src="img/picupArticle__img.jpg">
+                    <p class="picupContent__number">2022.11.13</p>
+                </div>
+                <div class="teamLove__box">　<!-- teamLoveの白枠 -->
+                    <p class="teamLove__title">teamLove☆Planets TOKYO </p>
+                    　 <p class="teamLove__description1">他者と共に、身体ごと没入し、身体で認識し、身体が世界と一体となる</p>
+                    <p class="teamLove__description2">
+                        チームラブプラネッツは、アートコレクティブ・チームラボによる4つの巨大な作品空間と、2つの庭園からなる「水に入るミュージアムと、花と一体化する庭園」。
+                        はだしとなって、他者と共に身体ごと巨大な作品に没入し、身体によって作品は変化し、身体と作品の境界の認識は曖昧なものとなる。作品は、他者の身体によっても変化し、作品と他者との境界も曖昧なものとなり、身体は作品と、そして他者と連続的になる。
+                    </p>
+                    <p class="teamLove__description3">📍東京都千代田区千代田1-1 teamLove Planets TOKYO</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recentposts">
+            <div class="recentpostsTitle">
+                <p class="recentpostsTitle__main">recent posts</p>
+                <p class="recentpostsTitle__sub">最新の投稿をチェック</p>
+            </div>
+            <div class="recentpostsContent">
+                <div class="recentpostsContent__box">
+                    <div class="whiteBox"></div>
+                    <div class="slider">
+                        <div class="sliderImg"><img src="img/sliderContent1.jpg" alt=""></div>
+                        <div class="sliderImg"><img src="img/sliderContent2.jpg" alt=""></div>
+                        <div class="sliderImg"><img src="img/sliderContent3.jpg" alt=""></div>
+                        <div class="sliderImg"><img src="img/sliderContent4.jpg" alt=""></div>
+                        <div class="sliderImg"><img src="img/sliderContent5.jpg" alt=""></div>
+                        <div class="sliderImg"><img src="img/sliderContent6.jpg" alt=""></div>
+                        <div class="sliderImg"><img src="img/sliderContent7.jpg" alt=""></div>
+                    </div>
+                    <div class="whiteBox"></div>
+                    <script>
+                        function drawWhiteBox() {
+                            const width = window.outerWidth;
+                            const boxCount = Math.round(width / 37);
+                            const whiteBoxes = document.querySelectorAll('.whiteBox');
+
+                            whiteBoxes.forEach(function (whiteBox) {
+                                whiteBox.innerHTML = ''; // Clear the previous content before redrawing
+                                for (let i = 1; i < boxCount; i++) {
+                                    whiteBox.innerHTML += '<div class="box"></div>';
+                                }
+                            });
+                        }
+
+                        window.addEventListener('resize', drawWhiteBox);
+
+                        // 初回の描画を行うために、ページロード時にも関数を実行します
+                        window.addEventListener('load', drawWhiteBox);
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="contactTitle">
+                <p class="contactTitle__main">contact</p>
+                <p class="contactTitle__sub">お問い合わせ</p>
+            </div>
+            <div class="form">
+                <div class="bx-wrapper__form">
+                    <form action method>
+                        <div class=" formItem">
+                            <div class="formItem__name">
+                                <label for="name" class="formlabel">◇氏名</label><br>
+                                <div class="formItem__NAME">
+                                    <input type="text" name="name" class="form-text" placeholder="姓">
+                                    <input type="text" name="name" class="form-text" 　 placeholder="名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <div class="formItem__furigana">
+                                <label for=" name" class="formlabel">◇氏名（ふりがな）</label><br>
+                                <div class="formItem__FURIGANA">
+                                    <input type="text" name="furigana" class="form-text" placeholder="せい">
+                                    <input type="text" name="furigana" class="form-text" placeholder="めい">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <div class="formItem__email">
+                                <lavel for="text" name="email" class="form-text">◇メールアドレス</lavel><br>
+                                <input type="text" name="email" class="form-text" placeholder="xxxxx@xxx.xx">
+                            </div>
+                        </div>
+                        <div class="formItem__textarea">
+                            <div class="formItem__message">
+                                <lavel for="message" name="message" class="form-textarea">◇内容</lavel><br>
+                                <textarea name="message" class="form-textarea" 　
+                                    placeholder="お問い合わせ内容を記入してください"></textarea>
+                            </div>
+                        </div>
+                        <div class="formItem__button">
+                            <input type="submit" class="form-button" value="送信">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <img class="radiusBig" src="img/radiusBig.png">
+            <img class="radiusSmall" src="img/radiusSmall.png">
+        </div>
+    </main>
+
+    <fotter>
+        <p class="footerText">© 2023 Mone's diary</p>
+    </fotter>
+</body>
+
+</html>
